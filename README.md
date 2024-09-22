@@ -1,5 +1,6 @@
 # Autism-detection-using-Emotion-recognition
 **This study explores the use of emotion recognition to detect autism spectrum disorder (ASD) in children, employing the ResNet 50 model to analyze seven key emotions that may signify autism-related traits**
+
 The project aims to create a video, captured in a kindergarten, to evaluate a child's emotions and determine signs of autism. If the child displays an emotional level significantly higher than that of a typical child, an alarm will be triggered to alert healthcare professionals, indicating the need for further evaluation.
 To determine if a child is autistic, detecting their emotions is a key factor. To this end, several algorithms have been designed using convolutional architectures. These algorithms leverage specific facial expression features to identify and classify emotions, providing a potentially valuable tool for assisting in the early diagnosis of autistic disorders.
 I implemented a model based on ResNet50 and incorporated additional layers to classify 7 emotions from facial expressions.
