@@ -10,15 +10,15 @@ I implemented a model based on ResNet50 and incorporated additional layers to cl
 4)BatchNormalization: A layer that normalizes the activations of the previous layer to speed up training and reduce overfitting.
 5)3 Dense Layers: These layers are fully connected layers that learn from the features extracted by the previous layers. Each layer is followed by a batch normalization layer, a ReLU activation layer, and a dropout layer.
 6)Final Dense Layer with Softmax Activation: The last dense layer produces the output probabilities for the classes in our problem, with a softmax activation to obtain a probability distribution over the classes.
-## Hyperparameters##
+## Hyperparameters ##
 - Epochs:60
 - Batch Size: 64,128,256
 - optimizer='Adam'
-## Data Augmentation##
+## Data Augmentation ##
 - To artificially increase the size of a dataset by creating variations of the existing data.
 - they include rotation, width_shift, height_shift,shear,zoom,horizontal_flip,vertical_flip etc
 - Was applied only on training set.
-## Accuracy##
+## Accuracy ##
 the training accuracy reaches 85.71%. Test set was evaluated and accuracy achieved was 83%
 ## Dataset ##
 Fer2013 contains approximately 30,000 RGB facial images of different expressions, limited to a size of 48×48 pixels, and its main labels can be divided into 7 types:
@@ -29,9 +29,14 @@ The expression 'Disgust' has the minimum number of images - 600, while the other
 - TensorFlow
 - OpenCV
 - Numpy
-  ## Detector ##
+## Detector ##
 -Uses Haar Cascade Classifiers in OpenCV to detect faces.
+
 -Preprocesses the detected face and resizes the face into 48x48 sized image
+
 -Passes the resized image into the model for emotion prediction
+
 -Predicted emotion is then displayed along with the bounding boxes on the face.
+
+
 [Open the code in Google Colab](https://colab.research.google.com/drive/1HNjN3NUGkVYNPqV1PDuZYRmiS0iU4OAG)
