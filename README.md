@@ -2,7 +2,6 @@
 
 ![autist](https://github.com/user-attachments/assets/0a8c8ab6-11cb-4ef1-a11b-cd27a31388b4)
 
-[cart.txt](https://github.com/user-attachments/files/17090077/cart.txt)
 
 **This study explores the use of emotion recognition to detect autism spectrum disorder (ASD) in children, employing the ResNet 50 model to analyze seven key emotions that may signify autism-related traits.**
 
