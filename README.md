@@ -9,10 +9,15 @@ To determine if a child is autistic, detecting their emotions is a key factor. T
 I implemented a model based on ResNet50 and incorporated additional layers to classify 7 emotions from facial expressions.
 ## Architecture of the model ##
  1)BaseModel: This layer is composed of several convolutional blocks followed by pooling layers, residual blocks (a series of residual blocks that form skip connections, enabling deeper training), and a global average pooling layer that reduces the output dimensionality to a feature vector.
+ 
 2)Dropout (rate 0.5): A regularization layer that randomly deactivates a fraction of neurons during training to reduce overfitting.
+
 3)Flatten: This layer transforms the data into a one-dimensional vector to be used by the following Dense layers.
+
 4)BatchNormalization: A layer that normalizes the activations of the previous layer to speed up training and reduce overfitting.
+
 5)3 Dense Layers: These layers are fully connected layers that learn from the features extracted by the previous layers. Each layer is followed by a batch normalization layer, a ReLU activation layer, and a dropout layer.
+
 6)Final Dense Layer with Softmax Activation: The last dense layer produces the output probabilities for the classes in our problem, with a softmax activation to obtain a probability distribution over the classes.
 ## Hyperparameters ##
 - Epochs:60
